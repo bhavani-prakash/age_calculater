@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="age_logo.ico">
     <link rel="stylesheet" href="styles.css">
     <title>Age calculater </title>
 </head>
@@ -54,10 +55,6 @@
             let month = document.getElementById('month').value;
             let date = document.getElementById('date').value;
 
-            if (typeof(year) != "number" || typeof(month)!="number" || typeof(date)!="number" ) {
-                window.alert(" Date of birth is always numbers !!!")
-                return;
-            }
 
             if (year>2025 || month>12 || date>31) {
                 window.alert("please enter the valid Date of birth  ! ")
