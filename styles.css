@@ -7,7 +7,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url(/star\ image.jpg);
+    background-image: url(star image.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
