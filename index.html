@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Age calculater </title>
+</head>
+
+<body>
+
+   <!-- <video autoplay loop muted class="bg-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+-->
+    <div class="heading">
+        <h1> Age caluculater</h1>
+        <h3> Enter your date of birth to calculate your age </h3>
+    </div>
+    <div class="form">
+
+        <div class="input">
+            <h2> Enter the year:</h2>
+            <input type="text" class="year" id="year">
+        </div>
+
+        <div class="input">
+            <h2> Enter month number: </h2>
+            <input type="text" class="month" id="month">
+        </div>
+
+        <div class="input">
+            <h2> Enter the date :</h2>
+            <input type="text" class="date" id="date">
+        </div>
+
+      
+    </div>
+
+    <div id="submit-button">
+        <button onclick="getinput()"> submit </button>
+    </div>
+
+    <div class="output">
+        <p id="output"> </p>
+    </div>
+
+    <script>
+        function getinput() {
+            // getting input values 
+            let year = document.getElementById('year').value;
+            let month = document.getElementById('month').value;
+            let date = document.getElementById('date').value;
+
+            if (typeof(year) != "number" || typeof(month)!="number" || typeof(date)!="number" ) {
+                window.alert(" Date of birth is always numbers !!!")
+                return;
+            }
+
+            if (year>2025 || month>12 || date>31) {
+                window.alert("please enter the valid Date of birth  ! ")
+                return;
+            }
+
+            if (year=="" || month=="" || date=="") {
+                window.alert("Please fill all the details !!!")
+                return;   
+            }
+
+           
+            // presett date
+
+            let today = new Date();
+            let birthDate = new Date(year, month - 1, date);
+
+            let age = today.getFullYear() - birthDate.getFullYear();
+            let monthDiff = today.getMonth() - birthDate.getMonth();
+            let dayDiff = today.getDate() - birthDate.getDate();
+
+            document.getElementById('output').innerText = " your age is : " + age + "  years  " + monthDiff + "  months   " + dayDiff + "  days";
+
+        }
+    </script>
+
+</body>
+
+</html>

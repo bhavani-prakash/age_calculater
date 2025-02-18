@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/star\ image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+.heading{
+    text-align: center;
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px;
+    h3{
+        margin-top: 15px;
+    }
+}
+
+.form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    width: auto;
+    gap: 10px;
+    width: auto;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+   
+}
+button{
+    margin-top: 30px;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(204, 162, 48);
+    font-size: 15px;
+
+}
+#submit-button{
+    display: flex;
+    justify-content: center;
+}
+.output{
+    margin-top: 25px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px dotted orange;
+}
